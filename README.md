@@ -1,0 +1,1 @@
+This repository contains coding block examples and lecture codes discussed during class sessions. It showcases practical implementations of concepts taught in lectures, helping to understand how different coding blocks and logic are applied in real-time classroom practice.
