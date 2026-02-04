@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    int totalRows = 2 * N + 1;
+
+    for(int i = 0; i < totalRows; i++) {
+        int row = i <= N ? i : totalRows - i - 1;
+
+        // Leading spaces
+        for(int s = 0; s < row; s++)
+            cout << "  ";
+
+        // Left decreasing numbers
+        for(int j = N - row; j >= 0; j--)
+            cout << j << " ";
+
+        // Right increasing numbers
+        for(int j = 1; j <= N - row; j++)
+            cout << j << " ";
+
+        cout << endl;
+    }
+
+    return 0;
+}
